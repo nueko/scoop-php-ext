@@ -1,0 +1,34 @@
+{
+  "homepage": "https://pecl.php.net/package/rdkafka",
+  "version": "2.0.1",
+  "license": "http://www.php.net/license/3_01.txt",
+  "architecture": {
+    "64bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/rdkafka/2.0.1/php_rdkafka-2.0.1-7.1-ts-vc14-x64.zip",
+      "hash": "e38b3060a7020c1c9bad018baaf83ad4beec829864e205c994c82368bbf75bd8"
+    },
+    "32bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/rdkafka/2.0.1/php_rdkafka-2.0.1-7.1-ts-vc14-x86.zip",
+      "hash": "b18845819541b2a25b41fc6dcc397e2ae953a6009a1e2b2f2f40f869c3dbca15"
+    }
+  },
+  "checkver": "rdkafka/([\\d.]+)/windows",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/rdkafka/$version/php_rdkafka-$version-7.1-ts-vc14-x64.zip"
+      },
+      "32bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/rdkafka/$version/php_rdkafka-$version-7.1-ts-vc14-x86.zip"
+      }
+    }
+  },
+  "post_install": "bin\\postinstall.ps1 rdkafka php71",
+  "pre_install": "bin\\install-php-bucket.ps1",
+  "depends": [
+    "php/php71"
+  ],
+  "uninstaller": {
+    "file": "uninstall.ps1"
+  }
+}

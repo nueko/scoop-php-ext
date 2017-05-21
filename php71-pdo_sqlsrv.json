@@ -1,0 +1,34 @@
+{
+  "homepage": "https://pecl.php.net/package/pdo_sqlsrv",
+  "version": "4.1.6.1",
+  "license": "http://www.php.net/license/3_01.txt",
+  "architecture": {
+    "64bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/pdo_sqlsrv/4.1.6.1/php_pdo_sqlsrv-4.1.6.1-7.1-ts-vc14-x64.zip",
+      "hash": "9c3f5714bd5b53ef97da256cb5ca94b96cae3b07dcbd5b6fbbf6ea8f5a999fc4"
+    },
+    "32bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/pdo_sqlsrv/4.1.6.1/php_pdo_sqlsrv-4.1.6.1-7.1-ts-vc14-x86.zip",
+      "hash": "4aeb2da9883577a6f52404f3d6922629cb4b8672d251429c6683cbe08f338687"
+    }
+  },
+  "checkver": "pdo_sqlsrv/([\\d.]+)/windows",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/pdo_sqlsrv/$version/php_pdo_sqlsrv-$version-7.1-ts-vc14-x64.zip"
+      },
+      "32bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/pdo_sqlsrv/$version/php_pdo_sqlsrv-$version-7.1-ts-vc14-x86.zip"
+      }
+    }
+  },
+  "post_install": "bin\\postinstall.ps1 pdo_sqlsrv php71",
+  "pre_install": "bin\\install-php-bucket.ps1",
+  "depends": [
+    "php/php71"
+  ],
+  "uninstaller": {
+    "file": "uninstall.ps1"
+  }
+}

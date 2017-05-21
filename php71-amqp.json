@@ -1,0 +1,34 @@
+{
+  "homepage": "https://pecl.php.net/package/amqp",
+  "version": "1.9.0",
+  "license": "http://www.php.net/license/3_01.txt",
+  "architecture": {
+    "64bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/amqp/1.9.0/php_amqp-1.9.0-7.1-ts-vc14-x64.zip",
+      "hash": "6ee8eec2867cf47cc8b39aa992c5580dff3b141a98c818304e5c67e75346d116"
+    },
+    "32bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/amqp/1.9.0/php_amqp-1.9.0-7.1-ts-vc14-x86.zip",
+      "hash": "4e4d28bd752879bf25707b91ec7d0b92113e0bde5bf0ff5454587a2869680bb3"
+    }
+  },
+  "checkver": "amqp/([\\d.]+)/windows",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/amqp/$version/php_amqp-$version-7.1-ts-vc14-x64.zip"
+      },
+      "32bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/amqp/$version/php_amqp-$version-7.1-ts-vc14-x86.zip"
+      }
+    }
+  },
+  "post_install": "bin\\postinstall.ps1 amqp php71",
+  "pre_install": "bin\\install-php-bucket.ps1",
+  "depends": [
+    "php/php71"
+  ],
+  "uninstaller": {
+    "file": "uninstall.ps1"
+  }
+}
