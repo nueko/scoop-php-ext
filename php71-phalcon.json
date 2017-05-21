@@ -26,7 +26,6 @@
     }
   },
   "post_install": "bin\\postinstall.ps1 phalcon php71",
-  "pre_install": "bin\\install-php-bucket.ps1",
   "uninstaller": {
     "file": "uninstall.ps1"
   }

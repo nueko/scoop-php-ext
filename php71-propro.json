@@ -24,7 +24,6 @@
     }
   },
   "post_install": "bin\\postinstall.ps1 propro php71",
-  "pre_install": "bin\\install-php-bucket.ps1",
   "uninstaller": {
     "file": "uninstall.ps1"
   }
