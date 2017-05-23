@@ -1,11 +1,5 @@
-[CmdletBinding()]
-Param(
-    [Parameter(Mandatory = $True, Position = 1)]
-    [string]$extension,
-
-    [Parameter(Mandatory = $True, Position = 2)]
-    [string]$php
-)
+$php = $app.Split('-')[0];
+$extension = $app.Split('-')[1];
 
 $confd = "$persist_dir\..\$php\conf.d"
 
@@ -15,7 +9,7 @@ if ((test-path $confd)) {
     # create ini file
     Write-Output "extension=$dir\php_$extension.dll" | Set-Content "$confd\$extension.ini"
     # create uninstaller
-    Write-Output "Remove-Item '$confd\$extension.ini'" | Set-Content "$dir\uninstall.ps1"
+    Write-Output "Remove-Item -Force -ErrorAction Ignore '$confd\$extension.ini'" | Set-Content "$dir\uninstall.ps1"
 }
 else {
     Write-Host -f Yellow "PHP was not installed through php bucket"
