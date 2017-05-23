@@ -1,0 +1,30 @@
+{
+  "homepage": "https://pecl.php.net/package/oci8",
+  "version": "2.1.4",
+  "license": "http://www.php.net/license/3_01.txt",
+  "architecture": {
+    "64bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.4/php_oci8-2.1.4-7.1-ts-vc14-x64.zip",
+      "hash": "848ee5284a6ae8b708888a9639f2c8aa7544b2e03f1b4d91fa10b0bf0f588c27"
+    },
+    "32bit": {
+      "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.4/php_oci8-2.1.4-7.1-ts-vc14-x86.zip",
+      "hash": "55695699a2297353127bf6b106e4a04498db43095efcd68858eaefbef6c8f683"
+    }
+  },
+  "checkver": "oci8/([\\d.]+)/windows",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/oci8/$version/php_oci8-$version-7.1-ts-vc14-x64.zip"
+      },
+      "32bit": {
+        "url": "http://windows.php.net/downloads/pecl/releases/oci8/$version/php_oci8-$version-7.1-ts-vc14-x86.zip"
+      }
+    }
+  },
+  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+  "uninstaller": {
+    "file": "uninstall.ps1"
+  }
+}
