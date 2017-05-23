@@ -23,7 +23,7 @@
       }
     }
   },
-  "post_install": "bin\\postinstall.ps1 xxtea php71",
+  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
   "uninstaller": {
     "file": "uninstall.ps1"
   }
