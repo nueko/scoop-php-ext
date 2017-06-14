@@ -1,30 +1,30 @@
 {
-  "homepage": "https://pecl.php.net/package/couchbase",
-  "version": "2.3.2",
-  "license": "http://www.php.net/license/3_01.txt",
-  "architecture": {
-    "64bit": {
-      "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.2/php_couchbase-2.3.2-7.1-ts-vc14-x64.zip",
-      "hash": "026bb1d22e1cc50c36ea54eeb96962643633d42f9aa5d954c7940e33ade6f786"
-    },
-    "32bit": {
-      "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.2/php_couchbase-2.3.2-7.1-ts-vc14-x86.zip",
-      "hash": "df60f857f37d26c525a9dadbc9329b8a473358cd6f26263749491a953ef7e4f7"
-    }
-  },
-  "checkver": "couchbase/([\\d.]+)/windows",
-  "autoupdate": {
+    "homepage": "https://pecl.php.net/package/couchbase",
+    "version": "2.3.3",
+    "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
-      "64bit": {
-        "url": "http://windows.php.net/downloads/pecl/releases/couchbase/$version/php_couchbase-$version-7.1-ts-vc14-x64.zip"
-      },
-      "32bit": {
-        "url": "http://windows.php.net/downloads/pecl/releases/couchbase/$version/php_couchbase-$version-7.1-ts-vc14-x86.zip"
-      }
+        "64bit": {
+            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.3/php_couchbase-2.3.3-7.1-ts-vc14-x64.zip",
+            "hash": "fecbd39f9e7f99c06dd7c91eafbed855104ae9cfacadc149b354e4f86d527d81"
+        },
+        "32bit": {
+            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.3/php_couchbase-2.3.3-7.1-ts-vc14-x86.zip",
+            "hash": "11f5897de7d4972e4dada38a07eb7d59726a5cd604fe89a4447b6f1208ef5c00"
+        }
+    },
+    "checkver": "couchbase/([\\d.]+)/windows",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://windows.php.net/downloads/pecl/releases/couchbase/$version/php_couchbase-$version-7.1-ts-vc14-x64.zip"
+            },
+            "32bit": {
+                "url": "http://windows.php.net/downloads/pecl/releases/couchbase/$version/php_couchbase-$version-7.1-ts-vc14-x86.zip"
+            }
+        }
+    },
+    "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+    "uninstaller": {
+        "file": "uninstall.ps1"
     }
-  },
-  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
-  "uninstaller": {
-    "file": "uninstall.ps1"
-  }
 }
