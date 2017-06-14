@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "nueko/scoop-php:master"
+    [String]$upstream = "nueko/scoop-php-ext:master"
 )
 
 $bin = split-path (scoop which scoop)
