@@ -25,9 +25,6 @@
     }
   },
   "env_add_path": "bin",
-  "env_set": {
-    "MAGICK_HOME": "$dir/bin"
-  },
   "checkver": "imagick/([\\d.]+)/windows",
   "autoupdate": {
     "architecture": {
@@ -39,7 +36,12 @@
       }
     }
   },
-  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+  "post_install": "
+    iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)
+
+    Write-Host \"Remove .exe files to prevent confusion with imagemagick\"
+    Remove-Item $dir\\bin\\*.exe
+  ",
   "uninstaller": {
     "file": "uninstall.ps1"
   }
