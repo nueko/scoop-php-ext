@@ -12,7 +12,7 @@
             "hash": "924414c7d75fc3bb501abb7181a27ff394bb948a3e3ec7e7034a89ed4b995a80"
         }
     },
-    "checkver": "apcu/([\\d.]+)/windows",
+    "checkver": "(?i)apcu/([\\d.]+)/windows",
     "autoupdate": {
         "architecture": {
             "64bit": {

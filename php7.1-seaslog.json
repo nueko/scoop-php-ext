@@ -12,7 +12,7 @@
             "hash": "1952e27fe31307377ba114c30886e358a97a13457ae789c531fa23cb872053f4"
         }
     },
-    "checkver": "seaslog/([\\d.]+)/windows",
+    "checkver": "(?i)seaslog/([\\d.]+)/windows",
     "autoupdate": {
         "architecture": {
             "64bit": {

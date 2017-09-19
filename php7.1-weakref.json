@@ -12,7 +12,7 @@
             "hash": "e33a3320c17d033526cec49db673803b5ccf6597d4241b31c3a93d2ae223191d"
         }
     },
-    "checkver": "weakref/([\\d.]+)/windows",
+    "checkver": "(?i)weakref/([\\d.]+)/windows",
     "autoupdate": {
         "architecture": {
             "64bit": {
