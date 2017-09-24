@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/couchbase",
-    "version": "2.3.4",
+    "version": "2.4.0",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.4/php_couchbase-2.3.4-7.1-ts-vc14-x64.zip",
-            "hash": "072d6b8c20016bea701fd807b43d4e29d6494f7784fdd4c98a7664547a02e83e"
+            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.4.0/php_couchbase-2.4.0-7.1-ts-vc14-x64.zip",
+            "hash": "f40dc13262f6be0110e5f04ee6665d6162906be7b31bdbd2bac85b4e8d2b82be"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.3.4/php_couchbase-2.3.4-7.1-ts-vc14-x86.zip",
-            "hash": "82617fc5a80b44f4255c632075ab14b897694227d91a650552a65bb1ca28e43d"
+            "url": "http://windows.php.net/downloads/pecl/releases/couchbase/2.4.0/php_couchbase-2.4.0-7.1-ts-vc14-x86.zip",
+            "hash": "07a89a10be38989f1302046c27642c8d930c80b8f622f7d0440f560b271096d3"
         }
     },
     "checkver": "couchbase/([\\d.]+)/windows",
