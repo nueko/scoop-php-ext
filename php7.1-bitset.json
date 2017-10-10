@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/bitset",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/bitset/3.0.0/php_bitset-3.0.0-7.1-ts-vc14-x64.zip",
-            "hash": "1492719390daca5d132d68e1b9d57ce5bd0a4ff7a829c09f08a623dc94c05153"
+            "url": "http://windows.php.net/downloads/pecl/releases/bitset/3.0.1/php_bitset-3.0.1-7.1-ts-vc14-x64.zip",
+            "hash": "05e9188ce68d709f9777bdbbe2b11111f80bb2552ad753614213896ecc8a78d2"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/bitset/3.0.0/php_bitset-3.0.0-7.1-ts-vc14-x86.zip",
-            "hash": "542edc356a1a36e147a42899e242504705f1402f6cc58083d7adf8330d8b7240"
+            "url": "http://windows.php.net/downloads/pecl/releases/bitset/3.0.1/php_bitset-3.0.1-7.1-ts-vc14-x86.zip",
+            "hash": "c33f8537359673c3af8266f88fc679d1fef0d896b34ab6d0466a10d33ab1d697"
         }
     },
     "checkver": "(?i)bitset/([\\d.]+)/windows",
