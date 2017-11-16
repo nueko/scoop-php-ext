@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/oci8",
-    "version": "2.1.7",
+    "version": "2.1.8",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.7/php_oci8-2.1.7-7.1-ts-vc14-x64.zip",
-            "hash": "513d28a917e3190a939400f358a460114cf2254d32d126bf3a2401ba8cbbe19c"
+            "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.8/php_oci8-2.1.8-7.1-ts-vc14-x64.zip",
+            "hash": "f23f37ab0bf6b86d00e8a197a39abf25464b7a1ab14811318df5bfacb8fcc4c3"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.7/php_oci8-2.1.7-7.1-ts-vc14-x86.zip",
-            "hash": "adf8cd48fa24c4b4f91d2f67bfc64d046a75c09627eb905aa5581e50842db427"
+            "url": "http://windows.php.net/downloads/pecl/releases/oci8/2.1.8/php_oci8-2.1.8-7.1-ts-vc14-x86.zip",
+            "hash": "1554e32a991347875211f34ab202ddb69f8fba7b633caa32e7af0cbb7dae1a0a"
         }
     },
     "checkver": "oci8/([\\d.]+)/windows",
