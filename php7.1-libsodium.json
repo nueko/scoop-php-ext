@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/libsodium",
-    "version": "2.0.8",
+    "version": "2.0.10",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/libsodium/2.0.8/php_libsodium-2.0.8-7.1-ts-vc14-x64.zip",
-            "hash": "a804e063aa5ce746c670813b8bc96c8c4b08d1e07fb878af50bef9f529f1b5b9"
+            "url": "http://windows.php.net/downloads/pecl/releases/libsodium/2.0.10/php_libsodium-2.0.10-7.1-ts-vc14-x64.zip",
+            "hash": "97434627f6dede4c78d39d0ec6e5980a59a66a20b59a453d15f816201b1944a0"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/libsodium/2.0.8/php_libsodium-2.0.8-7.1-ts-vc14-x86.zip",
-            "hash": "3ec48ffda8356a3c6aea1e5e7b463341342c72b49a1de22acd15519228dee3a5"
+            "url": "http://windows.php.net/downloads/pecl/releases/libsodium/2.0.10/php_libsodium-2.0.10-7.1-ts-vc14-x86.zip",
+            "hash": "de80e12109e440670aa775f3348880a4f8b2351b62da04e1e856af456592a9c0"
         }
     },
     "checkver": "libsodium/([\\d.]+)/windows",
