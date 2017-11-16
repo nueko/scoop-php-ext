@@ -1,6 +1,6 @@
 {
     "homepage": "https://github,com/phalcon/cphalcon/",
-    "version": "3.2.2",
+    "version": "3.2.4",
     "license": "https://github.com/phalcon/cphalcon/blob/master/docs/LICENSE.txt",
     "architecture": {
         "64bit": {
