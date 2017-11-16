@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/timezonedb",
-    "version": "2017.2",
+    "version": "2017.3",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/timezonedb/2017.2/php_timezonedb-2017.2-7.1-ts-vc14-x64.zip",
-            "hash": "81559c1e8316026521063a9cd4c2c3e1c3db7687dcb90d770742db4d8e14810b"
+            "url": "http://windows.php.net/downloads/pecl/releases/timezonedb/2017.3/php_timezonedb-2017.3-7.1-ts-vc14-x64.zip",
+            "hash": "6fa31deb72d12fbb1a7d0990e87d2178f94d173a5a9385ea9c9812b4291077e6"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/timezonedb/2017.2/php_timezonedb-2017.2-7.1-ts-vc14-x86.zip",
-            "hash": "9ad8e08cd1da68d68a4449c84890fb8c1f1182a85f04fb0992edfd28a348cf05"
+            "url": "http://windows.php.net/downloads/pecl/releases/timezonedb/2017.3/php_timezonedb-2017.3-7.1-ts-vc14-x86.zip",
+            "hash": "8a80ea9c0c9993eb656f274f9859d5811da947a69723c6664c706a3ea76a0ff0"
         }
     },
     "checkver": "timezonedb/([\\d.]+)/windows",
