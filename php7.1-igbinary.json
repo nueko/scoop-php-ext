@@ -1,15 +1,15 @@
 {
     "homepage": "https://pecl.php.net/package/igbinary",
-    "version": "2.0.1",
+    "version": "2.0.5",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/igbinary/2.0.1/php_igbinary-2.0.1-7.1-ts-vc14-x64.zip",
-            "hash": "bf783b61b587b9bb8f5d3687e2f79398f784b6d5fe12d8b7ca70a7a3cfd97665"
+            "url": "http://windows.php.net/downloads/pecl/releases/igbinary/2.0.5/php_igbinary-2.0.5-7.1-ts-vc14-x64.zip",
+            "hash": "f036a13c1dda349c3ce751fc07f59b68b9f9fc853328c90c80527bd5c6d642c8"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/pecl/releases/igbinary/2.0.1/php_igbinary-2.0.1-7.1-ts-vc14-x86.zip",
-            "hash": "eeaac8bb5389def6080db70747281c781ad88e2d3f5d6b3a4d8bca6c8b80a5a8"
+            "url": "http://windows.php.net/downloads/pecl/releases/igbinary/2.0.5/php_igbinary-2.0.5-7.1-ts-vc14-x86.zip",
+            "hash": "74cab95d793499d485c18b91264727692e86a51e1910d35abe47a57ce308d694"
         }
     },
     "checkver": "igbinary/([\\d.]+)/windows",
